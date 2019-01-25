@@ -24,9 +24,9 @@ console.log(m);
 
 let laptop = {Name:"Macbook", Style:"Pro"}
 
-function decorator(laptop, color) {
-    laptop.color = color;
+function decorator(object, property, propertyVal) {
+    object[property] = propertyVal;
 }
 
-decorator(laptop, "grey")
+decorator(laptop, "color", "grey")
 console.log(laptop.color);
